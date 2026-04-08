@@ -8,18 +8,27 @@
 </head>
 <body>
 <header class="encabezado">
-    <h1>Nicolas Guarin</h1>
+    <h1 >Nicolas Guarin</h1>
 
-    <nav>
-        <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="mascotas.html">🐾 Mis Mascotas</a></li>
-        </ul>
+    <!-- NAV PROYECTOS -->
+    <nav class="navegacion">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="mascotas.html">🐾 Mis Mascotas</a>
     </nav>
+</header>
 
-     <!-- SECCIÓN PROYECTOS -->
+    <section id="sobre_mi">
+        <h2>Sobre mi</h2>
+        <ul>
+            <li><a href="#">Landing Page Responsive</a></li>
+            <li><a href="#">E-commerce con JavaScript</a></li>
+            <li><a href="#">Portfolio Interactivo</a></li>
+        </ul>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS -->
     <section id="proyectos">
         <h2>Proyectos</h2>
         <ul>
@@ -34,11 +43,17 @@
         <h2>Contacto</h2>
         <form>
             <input type="text" placeholder="Tu nombre" required>
+            <br>
+            <br>
             <input type="email" placeholder="Tu email" required>
+            <br>
+            <br>
             <textarea placeholder="Tu mensaje" rows="5"></textarea>
+            <br>
+            <br>
             <button type="submit">Enviar mensaje</button>
         </form>
     </section>
-</header>
+
 </body>
 </html>
