@@ -1,59 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+    />
     <title>Nicolas Guarin Portafolio.</title>
-</head>
-<body>
-<header class="encabezado">
-    <h1 >Nicolas Guarin</h1>
+  </head>
 
-    <!-- NAV PROYECTOS -->
-    <nav class="navegacion">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-        <a href="mascotas.html">🐾 Mis Mascotas</a>
-    </nav>
-</header>
+  <body>
+    <header class="encabezado">
+      <!-- NAV PROYECTOS -->
+      <nav class="navegacion">
+        <div class="logo-nav"><a href="#index.html">NG</a></div>
+        <div class="nav-menu">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+          <a href="mascotas.html">🐾 Mis Mascotas</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h6 class="tlt-rol">DESARROLLADOR WEB</h6>
+      <h1 class="tlt-name">Nicolás<br /><span>Guarin</span></h1>
+      <p>
+        Construyo experiencias digitales limpias, <br />
+        funcionales y con propósito.
+      </p>
+      <div class="btn-hero">Ver Proyectos</div>
+    </section>
 
     <section id="sobre_mi">
-        <h2>Sobre mi</h2>
-        <ul>
-            <li><a href="#">Landing Page Responsive</a></li>
-            <li><a href="#">E-commerce con JavaScript</a></li>
-            <li><a href="#">Portfolio Interactivo</a></li>
-        </ul>
+      <h2 class="tlt-sobre_mi">Sobre mi</h2>
+      <div class="sobre-mi__grid">
+        <div class="mini-logo">NG</div>
+        <div class="sobre-mi-container-text">
+          <p>
+            Soy estudiante de desarrollo web con pasión por el diseño limpio y
+            el código bien estructurado. Me interesa crear interfaces que sean
+            tanto bellas como funcionales.
+          </p>
+          <p>
+            Actualmente aprendiendo HTML5, CSS3 y JavaScript. Cuando no estoy
+            frente al computador, probablemente estoy con mis mascotas.
+          </p>
+
+          <ul class="labels">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Diseño Responsivo</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- SECCIÓN PROYECTOS -->
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="#">Landing Page Responsive</a></li>
-            <li><a href="#">E-commerce con JavaScript</a></li>
-            <li><a href="#">Portfolio Interactivo</a></li>
+    <section
+      id="proyectos"
+      class="seccion seccion--oscura"
+    >
+      <div class="seccion__contenido">
+        <span class="seccion__numero">02</span>
+        <h2 class="seccion__titulo">Proyectos</h2>
+        <ul class="proyectos__lista">
+          <li class="proyecto__item">
+            <div class="proyecto__num">001</div>
+            <div class="proyecto__info">
+              <h3>Landing Page Responsive</h3>
+              <p>
+                Diseño adaptable para todos los dispositivos usando Flexbox y
+                Grid.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="proyecto__link"
+              aria-label="Ver Landing Page Responsive"
+              >→</a
+            >
+          </li>
+          <li class="proyecto__item">
+            <div class="proyecto__num">002</div>
+            <div class="proyecto__info">
+              <h3>E-commerce con JavaScript</h3>
+              <p>Tienda en línea con carrito de compras y filtros dinámicos.</p>
+            </div>
+            <a
+              href="#"
+              class="proyecto__link"
+              aria-label="Ver E-commerce"
+              >→</a
+            >
+          </li>
+          <li class="proyecto__item">
+            <div class="proyecto__num">003</div>
+            <div class="proyecto__info">
+              <h3>Portfolio Interactivo</h3>
+              <p>Portafolio personal con animaciones CSS y diseño editorial.</p>
+            </div>
+            <a
+              href="#"
+              class="proyecto__link"
+              aria-label="Ver Portfolio"
+              >→</a
+            >
+          </li>
         </ul>
+      </div>
     </section>
 
     <!-- SECCIÓN CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Tu nombre" required>
-            <br>
-            <br>
-            <input type="email" placeholder="Tu email" required>
-            <br>
-            <br>
-            <textarea placeholder="Tu mensaje" rows="5"></textarea>
-            <br>
-            <br>
-            <button type="submit">Enviar mensaje</button>
+    <section
+      id="contacto"
+      class="seccion seccion--acento"
+    >
+      <div class="seccion__contenido">
+        <span class="seccion__numero">03</span>
+        <h2 class="seccion__titulo">Contacto</h2>
+        <p class="contacto__intro">¿Tienes un proyecto en mente? Hablemos.</p>
+        <form
+          class="formulario"
+          novalidate
+        >
+          <div class="formulario__grupo">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre completo"
+              required
+            />
+          </div>
+          <div class="formulario__grupo">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+          <div class="formulario__grupo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Cuéntame sobre tu proyecto..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn-enviar"
+          >
+            Enviar mensaje
+          </button>
         </form>
+      </div>
     </section>
-
-</body>
+  </body>
 </html>

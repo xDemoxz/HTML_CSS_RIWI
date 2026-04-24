@@ -1,12 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis mascotas</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Mis Mascotas — Nicolás Guarin</title>
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="pagina-mascotas">
+    <!-- ===== HEADER ===== -->
+    <header class="encabezado">
+      <div class="encabezado__inner">
+        <div class="encabezado__logo"><a href="index.html">NG</a></div>
+        <nav class="navegacion">
+          <a href="index.html">← Portafolio</a>
+        </nav>
+      </div>
+    </header>
 
-</body>
+    <!-- hero mascotas -->
+    <section class="mascotas__hero">
+      <span
+        class="mascotas__emoji"
+        aria-hidden="true"
+        >🐾</span
+      >
+      <h1>Mis Mascotas</h1>
+      <p>Los mejores compañeros de código que existen.</p>
+    </section>
+
+    <main>
+      <!-- galeria -->
+      <section class="galeria">
+        <div class="galeria__contenido">
+          <article class="mascota__tarjeta">
+            <div class="mascota__imagen-wrapper">
+              <img
+                src="images/doogy.jpg"
+                alt="Zhorty, un bull terrier muy fachero."
+                class="mascota__imagen1"
+                loading="lazy"
+              />
+              <span class="mascota__tipo">Perro</span>
+            </div>
+            <div class="mascota__info">
+              <h2>Zhorty</h2>
+              <p class="mascota__raza">Bull Terrier · 3 años</p>
+              <p>
+                Zhorty llegó a casa cuando era apenas un cachorro. Es el más
+                expresivo de todos — siempre sabe cómo alegrarte el día con su
+                cola en movimiento constante. Le encanta correr en el parque y
+                robar calcetines.
+              </p>
+              <div class="mascota__tags">
+                <span>Jugueton</span>
+                <span>Amigable</span>
+                <span>Parlanchin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="mascota__tarjeta mascota__tarjeta--invertida">
+            <div class="mascota__imagen-wrapper">
+              <img
+                src="images/gato.webp"
+                class="mascota__imagen"
+                loading="lazy"
+              />
+              <span class="mascota__tipo">Gato</span>
+            </div>
+            <div class="mascota__info">
+              <h2>Milo</h2>
+              <p class="mascota__raza">Gato Esfinge · 5 años</p>
+              <p>
+                Gato es el filósofo de la casa. Pasa horas contemplando la
+                ventana como si resolviera los misterios del universo. Es
+                selectivo con su cariño, pero cuando decide sentarse en tu
+                regazo, es el mayor honor posible.
+              </p>
+              <div class="mascota__tags">
+                <span>Independiente</span>
+                <span>Curioso</span>
+                <span>Contemplativo</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="mascota__tarjeta">
+            <div class="mascota__imagen-wrapper">
+              <img
+                src="images/rabbit.webp"
+                alt="Coco, un conejo blanco con manchas grises comiendo hierba"
+                class="mascota__imagen"
+                loading="lazy"
+              />
+              <span class="mascota__tipo">Conejo</span>
+            </div>
+            <div class="mascota__info">
+              <h2>Coco</h2>
+              <p class="mascota__raza">Conejo Mini Lop · 2 años</p>
+              <p>
+                Coco es la más nueva de la familia y la que más sorpresas da.
+                Tiene una personalidad enorme para su tamaño: curiosa, terca, y
+                absolutamente convencida de que toda la casa le pertenece a
+                ella.
+              </p>
+              <div class="mascota__tags">
+                <span>Curiosa</span>
+                <span>Territorial</span>
+                <span>Tierna</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="pie">
+      <p>
+        <a
+          href="index.html"
+          class="pie__volver"
+          >← Volver al portafolio</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
